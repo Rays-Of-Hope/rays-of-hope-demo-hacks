@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	
+	<link href="bulma.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Covid Info</title>
+
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="fullPage">
+
+		<div class="drawer" id="drawer">
+
+			<div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+				<h1>
+					⬅
+				</h1>
+			</div>
+
+			<a href="index.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						Home
+					</h3>
+				</div>
+			</a>
+
+			<a href="covid.html">
+				<div class="drawerSection drawerSectionSelected">
+					<h3 class="drawerSectionText">
+						COVID-19
+					</h3>
+				</div>
+			</a>
+
+			<a href="news.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						News
+					</h3>
+				</div>
+			</a>
+
+			<a href="faq.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						FAQ
+					</h3>
+				</div>
+			</a>
+
+			<a href="jofs.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						JOFS
+					</h3>
+				</div>
+			</a>
+
+			<a href="credits.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						Credits
+					</h3>
+				</div>
+			</a>
+
+			<br /><br /><br /><br /><br />
+			<div data-cdc-widget='healthBot' data-cdc-theme='theme3' class='cdc-widget-color-dargray'
+				data-cdc-language='en-us'></div>
+			<script src='https://t.cdc.gov/1M1B'></script>
+
+		</div>
+
+		<div class="pageContent">
+			<div class="header">
+				<div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+					<h1>
+						≡
+					</h1>
+				</div>
+				<h1 class="headerTitle">
+					RAYS OF HOPE
+				</h1>
+				<div id="share" onclick="openShare()">
+					<img id="shareImg" src="assets/icons8-share.svg" />
+				</div>
+			</div>
+
+			<div class="content">
+				<h1>
+					Covid Info
+				</h1>
+				<div class="box">
+					<p>
+						COVID-19 is a disease caused by a virus discovered in December 2019 in Wuhan, China. It is very
+						contagious and has quickly spread around the world. COVID-19 most often causes respiratory
+						symptoms
+						that can feel much like a cold, a flu, or pneumonia, but COVID-19 can also harm other parts of
+						the
+						body. On February 11, 2020, the World Health Organization announced an official name for the
+						disease: coronavirus disease 2019, abbreviated COVID-19. ‘CO’ stands for ‘corona,’ ‘VI’ for
+						‘virus,’
+						and ‘D’ for disease. The virus that causes COVID-19, SARS-CoV-2, is a coronavirus. The word
+						corona
+						means crown and refers to the appearance that coronaviruses get from the spike proteins sticking
+						out
+						of them. To protect your family and other people, you should get vaccinated yourself. COVID-19
+						vaccines reduce the risk of people getting COVID-19 and can also reduce the risk of spreading
+						it. Be
+						sure to get everyone in your family who is 12 years or older vaccinated against COVID-19. Wear a
+						mask. To maximize protection from the Delta variant and prevent possibly spreading it to others,
+						have everyone in your family, even those who are vaccinated, wear a mask indoors in public if
+						you
+						are in an area of substantial or high transmission. You might choose to have everyone in your
+						family, even those who are vaccinated, wear a mask indoors in public regardless of the level of
+						transmission in your area. Unvaccinated family members, including children 2 years and older,
+						should
+						wear a mask in all indoor public settings. To set an example, you also might choose to wear a
+						mask.
+						Do NOT put a mask on children younger than 2 years old.
+
+					</p>
+				</div>
+
+
+
+				<div style="position: relative; max-width: 100vw; height: 800px"><iframe
+						src="https://api-bridge.azurewebsites.net/conditions/?p=coronavirus-covid-19&aspect=name,overview_short,symptoms_short,symptoms_long,treatments_overview_short,other_treatments_long,self_care_long,prevention_short,causes_short&tab=3&uid=ok"
+						title="NHS website - health a-z"
+						style="position: absolute; height: 100%; width: 100%; border: 2px solid #015eb8;"></iframe>
+				</div>
+
+
+
+
+
+
+			</div>
+
+			<!--PUT INFO AND DEMOGRAPHICS HERE-->
+
+
+			<div class="bingwidget" data-type="covid19" data-market="en-us" data-language="en-us"></div>
+
+			<script src="//www.bing.com/widget/bootstrap.answer.js" async=""></script>
+
+			<!---->
+
+		</div>
+	</div>
+
+
+
+
+
+</body>
+
+</html>

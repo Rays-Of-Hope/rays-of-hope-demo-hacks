@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Home Page</title>
+
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="fullPage">
+
+		<div class="drawer" id="drawer">
+
+			<div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+				<h1>
+					⬅
+				</h1>
+			</div>
+
+			<a href="index.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						Home
+					</h3>
+				</div>
+			</a>
+
+			<a href="covid.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						Covid
+					</h3>
+				</div>
+			</a>
+
+			<a href="news.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						News
+					</h3>
+				</div>
+			</a>
+
+			<a href="faq.html">
+				<div class="drawerSection drawerSectionSelected">
+					<h3 class="drawerSectionText">
+						FAQ
+					</h3>
+				</div>
+			</a>
+
+			<a href="jofs.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						JOFS
+					</h3>
+				</div>
+			</a>
+
+            <a href="credits.html">
+				<div class="drawerSection">
+					<h3 class="drawerSectionText">
+						Credits
+					</h3>
+				</div>
+			</a>
+
+			<br /><br /><br /><br /><br />
+			<div data-cdc-widget='healthBot' data-cdc-theme='theme3' class='cdc-widget-color-dargray'
+				data-cdc-language='en-us'></div>
+			<script src='https://t.cdc.gov/1M1B'></script>
+
+		</div>
+
+		<div class="pageContent">
+			<div class="header">
+				<div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+					<h1>
+						≡
+					</h1>
+				</div>
+				<h1 class="headerTitle">
+					RAYS OF HOPE
+				</h1>
+				<div id="share" onclick="openShare()">
+					<img id="shareImg" src="assets/icons8-share.svg" />
+				</div>
+			</div>
+
+			<div class="content">
+				<h1>
+					<style>
+						.smol {
+							font-size: 40%;
+							opacity: 50%;
+						}
+					</style>
+					F<span class="smol">requently</span>
+					A<span class="smol">asked</span class="smol">
+					Q<span class="smol">uestions</span>
+					<span style="font-size: 60%; opacity: 70%;">From CDC</span>
+				</h1>
+				<div class="faq">
+
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-4964036c-006b-4efb-b66c-afe152a581be"></div>
+
+
+				</div>
+				<p>
+
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

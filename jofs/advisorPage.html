@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>Advisor Page</title>
+
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="fullPage">
+
+        <div class="drawer" id="drawer">
+
+            <div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+                <h1>
+                    ⬅
+                </h1>
+            </div>
+
+            <a href="../index.html">
+                <div class="drawerSection">
+                    <h3 class="drawerSectionText">
+                        Back to Home
+                    </h3>
+                </div>
+            </a>
+            <a href="../jofs.html">
+                <div class="drawerSection">
+                    <h3 class="drawerSectionText">
+                        JOFS
+                    </h3>
+                </div>
+            </a>
+
+            <br /><br /><br /><br /><br />
+            <div data-cdc-widget='healthBot' data-cdc-theme='theme3' class='cdc-widget-color-dargray'
+                data-cdc-language='en-us'></div>
+            <script src='https://t.cdc.gov/1M1B'></script>
+
+        </div>
+
+        <div class="pageContent">
+            <div class="header">
+                <div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+                    <h1>
+                        ≡
+                    </h1>
+                </div>
+                <h1 class="headerTitle">
+                    RAYS OF HOPE
+                </h1>
+                <div id="share" onclick="openShare()">
+                    <img id="shareImg" src="../assets/icons8-share.svg" />
+                </div>
+            </div>
+
+            <div class="content">
+
+                <style>
+                    .smol {
+                        font-size: 40%;
+                        opacity: 50%;
+                    }
+                </style>
+
+                <div class="advisorPage">
+                    <div class="oppSection" id="jobSection">
+                        <button class="createButton" id="jobButton">Create Job Opportunity ▼</button>
+                        <div class="oppContent" id="jobContent">
+                            <h2>
+                                Create...
+                            </h2>
+                            <input type="text" placeholder="Job Name" class="createInput" id="oppJobNameInput"/>
+                            <br />
+                            <input type="text" placeholder="Company" class="createInput" id="oppCompanyInput"/>
+                            <br />
+                            <input type="text" placeholder="State" class="createInput" id="oppStateInput"/>
+                            <br />
+                            <input type="text" placeholder="Email" class="createInput" id="oppEmailInput"/>
+                            <br />
+                            <input type="button" value="Submit" class="createButton" id="submitJobButton"
+                                onclick="submitOpp(0);" />
+                        </div>
+                    </div>
+
+                    <div class="oppSection" id="financialSection">
+                        <button class="createButton" id="financialButton">Create Financial Support Opportunity
+                            ▼</button>
+                        <div class="oppContent" id="financialContent">
+                            <h2>
+                                Create...
+                            </h2>
+                            <input type="text" placeholder="Company" class="createInput" id="finCompanyInput"/>
+                            <br />
+                            <input type="text" placeholder="State" class="createInput" id="finStateInput"/>
+                            <br />
+                            <input type="text" placeholder="Description" class="createInput" id="finDescInput" style="height: 100px; width: 100%;" aria-multiline="true"/>
+                            <br />
+                            <input type="text" placeholder="Email" class="createInput" id="finEmailInput"/>
+                            <br />
+                            <input type="button" value="Submit" class="createButton" id="submitFinButton"
+                                onclick="submitOpp(1);" />
+                        </div>
+                    </div>
+
+                    <div class="oppSection" id="financialSection">
+                        <a href="profile.html">
+                            <button class="createButton">Go to my Profile</button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <script>
+                    document.getElementById("jobButton").addEventListener("click", (ev) => {
+                        var c = document.getElementById("jobContent");
+                        c.style.display = (c.style.display == "block") ? "none" : "block";
+                        var c_ = document.getElementById("financialContent");
+                        c_.style.display = "none";
+                    });
+
+                    document.getElementById("financialButton").addEventListener("click", (ev) => {
+                        var c = document.getElementById("financialContent");
+                        c.style.display = (c.style.display == "block") ? "none" : "block";
+                        var c_ = document.getElementById("jobContent");
+                        c_.style.display = "none";
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- firebase stuff -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="../dbStuff.js"></script>
+    <!---->
+
+</body>
+
+</html>

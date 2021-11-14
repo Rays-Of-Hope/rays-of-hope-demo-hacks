@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title>News</title>
+
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+	<div class="drawer" id="drawer">
+
+		<div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+			<h1>
+				⬅
+			</h1>
+		</div>
+
+		<a href="index.html">
+			<div class="drawerSection">
+				<h3 class="drawerSectionText">
+					Home
+				</h3>
+			</div>
+		</a>
+
+		<a href="covid.html">
+			<div class="drawerSection">
+				<h3 class="drawerSectionText">
+					COVID-19
+				</h3>
+			</div>
+		</a>
+
+		<a href="news.html">
+			<div class="drawerSection drawerSectionSelected">
+				<h3 class="drawerSectionText">
+					News
+				</h3>
+			</div>
+		</a>
+
+		<a href="faq.html">
+			<div class="drawerSection">
+				<h3 class="drawerSectionText">
+					FAQ
+				</h3>
+			</div>
+		</a>
+
+		<a href="jofs.html">
+			<div class="drawerSection">
+				<h3 class="drawerSectionText">
+					JOFS
+				</h3>
+			</div>
+		</a>
+
+		<a href="credits.html">
+			<div class="drawerSection">
+				<h3 class="drawerSectionText">
+					Credits
+				</h3>
+			</div>
+		</a>
+
+		<br /><br /><br /><br /><br />
+		<div data-cdc-widget='healthBot' data-cdc-theme='theme3' class='cdc-widget-color-dargray'
+			data-cdc-language='en-us'></div>
+		<script src='https://t.cdc.gov/1M1B'></script>
+
+	</div>
+
+	<div class="pageContent">
+		<div class="header">
+			<div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+				<h1>
+					≡
+				</h1>
+			</div>
+			<h1 class="headerTitle">
+				RAYS OF HOPE
+			</h1>
+			<div id="share" onclick="openShare()">
+				<img id="shareImg" src="assets/icons8-share.svg" />
+			</div>
+		</div>
+
+		<div class="content">
+			<h1>
+				News
+			</h1>
+			<p>
+
+
+				Here are the latest Covid-19 News from <span style="
+					border-radius: 100px;
+					background-color: #1DA1F2;
+					padding-left: 10px;
+					padding-right: 10px;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					color: white;
+					">
+					@WHCOVIDResponse
+				</span>
+
+
+			</p>
+
+			<div class="content">
+				<a class="twitter-timeline" href="https://twitter.com/WHCOVIDResponse?ref_src=twsrc%5Etfw">Tweets by
+					WHCOVIDResponse</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+
+
+
+		</div>
+	</div>
+	</div>
+
+</html>

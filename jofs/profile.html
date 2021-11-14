@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <title>JOFS Profile</title>
+
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="fullPage">
+
+        <div class="drawer" id="drawer">
+
+            <div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+                <h1>
+                    ⬅
+                </h1>
+            </div>
+
+            <a href="../index.html">
+                <div class="drawerSection">
+                    <h3 class="drawerSectionText">
+                        Back to Home
+                    </h3>
+                </div>
+            </a>
+            <a href="../jofs.html">
+                <div class="drawerSection">
+                    <h3 class="drawerSectionText">
+                        JOFS
+                    </h3>
+                </div>
+            </a>
+
+            <br /><br /><br /><br /><br />
+            <div data-cdc-widget='healthBot' data-cdc-theme='theme3' class='cdc-widget-color-dargray'
+                data-cdc-language='en-us'></div>
+            <script src='https://t.cdc.gov/1M1B'></script>
+
+        </div>
+
+        <div class="pageContent">
+            <div class="header">
+                <div id="hamburger" onclick="pageFuncs.toggleDrawer()">
+                    <h1>
+                        ≡
+                    </h1>
+                </div>
+                <h1 class="headerTitle">
+                    RAYS OF HOPE
+                </h1>
+                <div id="share" onclick="openShare()">
+                    <img id="shareImg" src="../assets/icons8-share.svg" />
+                </div>
+            </div>
+
+            <div class="content">
+
+                <style>
+                    .content>*{
+                        position: relative;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        text-align: center;
+                    }
+                </style>
+
+                <h1>
+                    Profile
+                </h1>
+
+                <div class="oppSection" style="padding-top: 10px; padding-bottom: 10px;">
+                    <h2>
+                        You are signed in as ...
+                    </h2>
+                    <input type="button" value="Back to previous page" class="createButton profileBtn" onclick="window.history.go(-1)"/>
+                    <br/>
+                    <input type="button" value="Sign out" class="createButton" style="margin: 0; margin-bottom: 10;" onclick="auth.signOut()"/>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- firebase stuff -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="../dbStuff.js"></script>
+    <!---->
+
+</body>
+
+</html>
